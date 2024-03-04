@@ -1,0 +1,6 @@
+[tool.yamlfix]
+whitelines           = 1
+comments_whitelines  = 1
+section_whitelines   = 1
+explicit_start       = false
+sequence_style       = "block_style"

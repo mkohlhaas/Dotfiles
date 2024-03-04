@@ -1,0 +1,7 @@
+#! /bin/bash
+
+FILES=$(baloosearch "$@" | fzf)
+
+if [ -n "$FILES" ]; then
+  vim $(echo $FILES | xargs)
+fi

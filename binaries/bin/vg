@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Only one regex allowed."
+    exit
+fi
+
+FILES=$(rg -l "$@" | fzf)
+
+if [ -n "$FILES" ]; then
+  vim $(echo $FILES | xargs)
+fi

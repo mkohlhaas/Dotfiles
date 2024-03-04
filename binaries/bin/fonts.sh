@@ -1,0 +1,26 @@
+sudo xbps-install Fonts-TLWG                       font-cozette                     font-misc-misc                   font-sony-misc                 
+sudo xbps-install Fonts-TLWG-otf                   font-cursor-misc                 font-mplus-ttf                   font-sourcecodepro             
+sudo xbps-install font-3270                        font-daewoo-misc                 font-mutt-misc                   font-spleen                    
+sudo xbps-install font-FixedMisc                   font-dec-misc                    font-open-dyslexic-ttf           font-sun-misc                  
+sudo xbps-install font-Hasklig                     font-fantasque-sans-ttf          font-sarasa-gothic               font-symbola                   
+sudo xbps-install font-Siji                        font-fira-otf                    font-schumacher-misc             font-tamsyn                    
+sudo xbps-install font-adobe-100dpi                font-fira-ttf                    font-sil-abyssinica              font-tamzen                    
+sudo xbps-install font-adobe-75dpi                 font-firacode                    font-sil-alkalami                font-unifont-bdf               
+sudo xbps-install font-adobe-source-code-pro       font-go-ttf                      font-sil-andika                  font-util                      
+sudo xbps-install font-adobe-utopia-100dpi         font-hack-ttf                    font-sil-annapurna               font-vazir                     
+sudo xbps-install font-adobe-utopia-75dpi          font-hanazono                    font-sil-awami-nastaliq          font-vollkorn-ttf              
+sudo xbps-install font-adobe-utopia-type1          font-hermit-otf                  font-sil-charis                  font-weather-icons             
+sudo xbps-install font-alias                       font-ibm-plex-otf                font-sil-doulos                  fontconfig                     
+sudo xbps-install font-awesome                     font-ibm-plex-ttf                font-sil-ezra                    fontconfig-devel               
+sudo xbps-install font-awesome5                    font-ibm-type1                   font-sil-galatia                 fontconfig-doc                 
+sudo xbps-install font-b612                        font-inconsolata-otf             font-sil-gentium                 fontforge                      
+sudo xbps-install font-bh-100dpi                   font-ionicons-ttf                font-sil-harmattan               fontmanager                    
+sudo xbps-install font-bh-75dpi                    font-iosevka                     font-sil-lateef                  fontmatrix                     
+sudo xbps-install font-bh-lucidatypewriter-100dpi  font-isas-misc                   font-sil-mingzat                 fonts-croscore-ttf             
+sudo xbps-install font-bh-lucidatypewriter-75dpi   font-jis-misc                    font-sil-mondulkiri              fonts-droid-ttf                
+sudo xbps-install font-bh-ttf                      font-kakwafont                   font-sil-namdhinggo              fonts-nanum-ttf                
+sudo xbps-install font-bh-type1                    font-libertine-otf               font-sil-nuosu                   fonts-nanum-ttf-extra          
+sudo xbps-install font-bitstream-100dpi            font-libertine-ttf               font-sil-padauk                  fonts-roboto-ttf               
+sudo xbps-install font-bitstream-75dpi             font-manjari                     font-sil-scheherazade            fonttools                      
+sudo xbps-install font-bitstream-speedo            font-material-design-icons-ttf   font-sil-sophia-nubian           fonttosfnt                     
+sudo xbps-install font-bitstream-type1             font-micro-misc                  font-sil-tai-heritage-pro                    

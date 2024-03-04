@@ -1,0 +1,34 @@
+# https://w3.ual.es/~vruiz/Docencia/Apuntes/Multimedia/ALSA/index.html
+# DAC
+pcm.!default {
+    type hw
+    card CODEC
+}
+
+# Mixer
+ctl.!default {
+    type hw
+    card CODEC
+}
+
+# https://jackaudio.org/faq/routing_alsa.html
+pcm.rawjack {
+    type jack
+    playback_ports {
+        0 system:playback_1
+        1 system:playback_2
+    }
+    capture_ports {
+        0 system:capture_1
+        1 system:capture_2
+    }
+}
+
+# Usage e.g.: chromium --alsa-output-device=pcm.jack
+pcm.jack {
+    type plug
+    slave { pcm "rawjack" }
+    hint {
+        description "JACK Audio Connection Kit"
+    }
+}

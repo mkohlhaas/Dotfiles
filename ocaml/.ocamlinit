@@ -1,0 +1,5 @@
+#require "core.top";;
+#require "ppx_jane";;
+open Base;;
+open Stdio;;
+#utop_prompt_fancy_light;;
