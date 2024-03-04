@@ -2,6 +2,8 @@
 .viminfo
 **/golang/go/src/
 
+bananamount
+bananamount.sh
 bananapimount
 bananapimount.sh
 tags
