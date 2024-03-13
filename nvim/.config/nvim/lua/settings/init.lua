@@ -60,4 +60,4 @@ set.hlsearch       = true  -- Use highlighting when doing a search.
 set.history        = 1000  -- Set the commands to save in history default number is 20.
 set.updatetime     = 100
 set.undofile       = true
-set.undodir        = "/home/schmidh/Dropbox/nvim/undo/"
+-- set.undodir        = "/home/schmidh/Dropbox/nvim/undo/"
