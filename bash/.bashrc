@@ -98,6 +98,9 @@ if [ -f /usr/share/fzf/key-bindings.bash ]; then
   source /usr/share/fzf/key-bindings.bash
 fi
 
+# Flatpak integration
+export PATH=$PATH:/var/lib/flatpak/exports/bin/
+
 # mpc - Music Player Client - completions
 source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # mpv - Media playser completions
