@@ -156,6 +156,7 @@ eval "$(fzf --bash)"
 alias gaap="git add .;git commit --amend --no-edit;git push --force"
 
 # pipx
+# sudo pacman -S python-pipx
 # Created by `pipx` on 2024-08-02 23:04:18
 export PATH="$PATH:/home/schmidh/.local/bin"
 eval "$(register-python-argcomplete pipx)"
