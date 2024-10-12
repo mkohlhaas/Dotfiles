@@ -163,3 +163,14 @@ eval "$(register-python-argcomplete pipx)"
 
 # PureScript
 source <(spago --bash-completion-script `which spago`)
+
+# Kerl - Erlang
+# Build options:
+# export KERL_DOC_TARGETS="man html pdf chunks"
+export KERL_DOC_TARGETS="html"
+export KERL_INSTALL_MANPAGES=yes
+export KERL_BUILD_DOCS=yes
+export KERL_BUILD_BACKEND=tarball
+
+source /home/schmidh/Kerl/27.0/activate
+export PATH=/home/schmidh/Kerl/27.0/.cache/rebar3/bin:$PATH
