@@ -167,8 +167,7 @@ source <(spago --bash-completion-script `which spago`)
 # Kerl - Erlang
 # Build options:
 # export KERL_DOC_TARGETS="man html pdf chunks"
-export KERL_DOC_TARGETS="html"
-export KERL_INSTALL_MANPAGES=yes
+export KERL_DOC_TARGETS="html chunks"
 export KERL_BUILD_DOCS=yes
 export KERL_BUILD_BACKEND=tarball
 
