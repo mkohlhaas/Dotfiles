@@ -173,3 +173,6 @@ export KERL_BUILD_BACKEND=tarball
 
 source /home/schmidh/Kerl/27.0/activate
 export PATH=/home/schmidh/Kerl/27.0/.cache/rebar3/bin:$PATH
+
+# esbuild - https://esbuild.github.io/getting-started/#install-esbuild
+export PATH=/home/schmidh/node_modules/.bin/:$PATH
