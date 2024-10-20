@@ -171,7 +171,7 @@ export KERL_DOC_TARGETS="html chunks"
 export KERL_BUILD_DOCS=yes
 export KERL_BUILD_BACKEND=tarball
 
-source /home/schmidh/Kerl/27.0/activate
+source /home/schmidh/Kerl/26/activate
 export PATH=/home/schmidh/Kerl/27.0/.cache/rebar3/bin:$PATH
 
 # esbuild - https://esbuild.github.io/getting-started/#install-esbuild
