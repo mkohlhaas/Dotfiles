@@ -8,6 +8,10 @@ return {
             purescript = {
               formatter = "purs-tidy",
               addSpagoSources = true,
+              censorWarnings = {
+                "ShadowedName",
+                "MissingTypeDeclaration"
+              },
             },
           },
         },
