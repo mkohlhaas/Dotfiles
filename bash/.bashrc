@@ -176,3 +176,6 @@ export PATH=/home/schmidh/Kerl/27.0/.cache/rebar3/bin:$PATH
 
 # esbuild - https://esbuild.github.io/getting-started/#install-esbuild
 export PATH=/home/schmidh/node_modules/.bin/:$PATH
+
+# so man pages can be found
+unset MANPATH
