@@ -179,3 +179,6 @@ export PATH=/home/schmidh/node_modules/.bin/:$PATH
 
 # so man pages can be found
 unset MANPATH
+
+# curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+[ -f "/home/schmidh/.ghcup/env" ] && . "/home/schmidh/.ghcup/env" # ghcup-env
