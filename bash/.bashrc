@@ -183,3 +183,9 @@ unset MANPATH
 
 # curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 [ -f "/home/schmidh/.ghcup/env" ] && . "/home/schmidh/.ghcup/env" # ghcup-env
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Rust
+export PATH=/home/schmidh/.cargo/bin:$PATH
