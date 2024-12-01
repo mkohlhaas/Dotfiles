@@ -188,4 +188,4 @@ unset MANPATH
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Rust
-export PATH=/home/schmidh/.cargo/bin:$PATH
+export PATH=/usr/lib/rustup/bin/:/home/schmidh/.cargo/bin:$PATH
