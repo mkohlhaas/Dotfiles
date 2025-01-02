@@ -145,8 +145,6 @@ source "$OSH"/oh-my-bash.sh
 
 export PATH=$PATH:$HOME/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
 
-source /usr/share/bash-completion/bash_completion
-
 # VTE (Virtual Terminal Emulator) Configuration
 source /etc/profile.d/vte.sh
 
@@ -189,3 +187,7 @@ unset MANPATH
 
 # Rust
 export PATH=/usr/lib/rustup/bin/:/home/schmidh/.cargo/bin:$PATH
+
+# https://github.com/ohmybash/oh-my-bash/issues/448
+source /usr/share/bash-completion/bash_completion
+complete -d cd
