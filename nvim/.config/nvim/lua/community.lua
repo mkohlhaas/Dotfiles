@@ -7,4 +7,5 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.purescript" },
+  { import = "astrocommunity.pack.python-ruff" },
 }
