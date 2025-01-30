@@ -160,18 +160,18 @@ export PATH="$PATH:/home/schmidh/.local/bin"
 eval "$(register-python-argcomplete pipx)"
 
 # PureScript
-source <(spago --bash-completion-script `which spago`)
+# source <(spago --bash-completion-script `which spago`)
 
 # Kerl - Erlang
 # Build options:
 # export KERL_DOC_TARGETS="man html pdf chunks"
-export KERL_DOC_TARGETS="html chunks"
-export KERL_BUILD_DOCS=yes
-export KERL_BUILD_BACKEND=tarball
+# export KERL_DOC_TARGETS="html chunks"
+# export KERL_BUILD_DOCS=yes
+# export KERL_BUILD_BACKEND=tarball
 
-ERLANG_VERSION=27.0
-source /home/schmidh/Kerl/$ERLANG_VERSION/activate
-export PATH=/home/schmidh/Kerl/$ERLANG_VERSION/.cache/rebar3/bin:$PATH
+# ERLANG_VERSION=27.0
+# source /home/schmidh/Kerl/$ERLANG_VERSION/activate
+# export PATH=/home/schmidh/Kerl/$ERLANG_VERSION/.cache/rebar3/bin:$PATH
 
 # esbuild - https://esbuild.github.io/getting-started/#install-esbuild
 export PATH=/home/schmidh/node_modules/.bin/:$PATH
@@ -180,13 +180,13 @@ export PATH=/home/schmidh/node_modules/.bin/:$PATH
 unset MANPATH
 
 # curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
-[ -f "/home/schmidh/.ghcup/env" ] && . "/home/schmidh/.ghcup/env" # ghcup-env
+# [ -f "/home/schmidh/.ghcup/env" ] && . "/home/schmidh/.ghcup/env" # ghcup-env
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Rust
-export PATH=/usr/lib/rustup/bin/:/home/schmidh/.cargo/bin:$PATH
+# export PATH=/usr/lib/rustup/bin/:/home/schmidh/.cargo/bin:$PATH
 
 # https://github.com/ohmybash/oh-my-bash/issues/448
 source /usr/share/bash-completion/bash_completion
