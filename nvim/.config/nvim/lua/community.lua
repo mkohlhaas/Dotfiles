@@ -10,4 +10,6 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.purescript" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
 }
