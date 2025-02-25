@@ -156,7 +156,7 @@ alias gaap="git add .;git commit --amend --no-edit;git push --force"
 # pipx
 # sudo pacman -S python-pipx
 # Created by `pipx` on 2024-08-02 23:04:18
-export PATH="$PATH:/home/schmidh/.local/bin"
+export PATH="$PATH:/home/schmidh/.local/bin:/home/schmidh/.local/share/nvim/mason/bin"
 eval "$(register-python-argcomplete pipx)"
 
 # PureScript
@@ -190,4 +190,6 @@ unset MANPATH
 
 # https://github.com/ohmybash/oh-my-bash/issues/448
 source /usr/share/bash-completion/bash_completion
+# Godot completions
+source $HOME/.local/share/bash-completion/completions/godot
 complete -d cd
