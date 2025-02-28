@@ -193,3 +193,6 @@ source /usr/share/bash-completion/bash_completion
 # Godot completions
 source $HOME/.local/share/bash-completion/completions/godot
 complete -d cd
+
+# https://github.com/huyng/bashmarks.git
+source ~/.local/bin/bashmarks.sh
