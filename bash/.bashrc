@@ -196,3 +196,5 @@ complete -d cd
 
 # https://github.com/huyng/bashmarks.git
 source ~/.local/bin/bashmarks.sh
+
+set +o noclobber
