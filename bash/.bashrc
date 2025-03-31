@@ -213,4 +213,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.config/nvim-Lazyman/.nvimsbind ] && source ~/.config/nvim-Lazyman/.nvimsbind
 
 # https://lazyman.dev/install/
-export NVIM_APPNAME="nvim-Lazyman"
+# export NVIM_APPNAME="nvim-Lazyman"
+
+# asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
