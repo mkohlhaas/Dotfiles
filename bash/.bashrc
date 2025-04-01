@@ -217,3 +217,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# vcpkg
+export VCPKG_ROOT=$HOME/.local/share/vcpkg
+export PATH=$PATH:$VCPKG_ROOT
+export VCPKG_DISABLE_METRICS=TRUE
+alias update-vcpkg='git -C $VCPKG_ROOT pull'
