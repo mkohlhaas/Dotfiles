@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.vue" },
   -- { import = "astrocommunity.pack.typescript-deno" },
   -- { import = "astrocommunity.pack.godot" },
 }
