@@ -191,20 +191,20 @@ unset MANPATH
 # https://github.com/ohmybash/oh-my-bash/issues/448
 source /usr/share/bash-completion/bash_completion
 # Godot completions
-source $HOME/.local/share/bash-completion/completions/godot
+source "$HOME"/.local/share/bash-completion/completions/godot
 complete -d cd
 
 # https://github.com/huyng/bashmarks.git
 source ~/.local/bin/bashmarks.sh
 
 set +o noclobber
-if command -v zoxide > /dev/null; then
-  eval "$(zoxide init bash)"
+if command -v zoxide >/dev/null; then
+	eval "$(zoxide init bash)"
 fi
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 # Source the Lazyman shell initialization for aliases and nvims selector
 # shellcheck source=.config/nvim-Lazyman/.lazymanrc
 [ -f ~/.config/nvim-Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
@@ -223,3 +223,6 @@ export VCPKG_ROOT=$HOME/.local/share/vcpkg
 export PATH=$PATH:$VCPKG_ROOT
 export VCPKG_DISABLE_METRICS=TRUE
 alias update-vcpkg='git -C $VCPKG_ROOT pull'
+
+# Vue devtools (open in nvim editor)
+export LAUNCH_EDITOR=editor-launcher.sh
