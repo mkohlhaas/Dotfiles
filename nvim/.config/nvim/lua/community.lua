@@ -8,7 +8,7 @@ return {
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python-ruff" },
-  { import = "astrocommunity.pack.purescript" },
+  -- { import = "astrocommunity.pack.purescript" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
