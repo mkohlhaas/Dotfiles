@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.clojure" },
   -- { import = "astrocommunity.pack.typescript-deno" },
   -- { import = "astrocommunity.pack.godot" },
 }
