@@ -1,2 +1,4 @@
+.clj-kondo/
+.lsp/
 nvim/.config/nvim/lazy-lock.json
 bin/.local/bin/bananapimount.sh
