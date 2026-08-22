@@ -1,0 +1,30 @@
+[user]
+	name = Hans-J. Schmid
+	email = knock@myopendoor.de
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	he = help
+	cl = clone
+[core]
+	; pager = bat
+	editor = nvim
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
+[mergetool]
+	prompt = false
+[branch "master"]
+	rebase = true
+[alias]
+	lg = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
