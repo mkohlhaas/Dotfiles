@@ -1,0 +1,6 @@
+[Unit]
+Description=Gitea Backup Failure Notification Handler
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/send-desktop-alert.sh

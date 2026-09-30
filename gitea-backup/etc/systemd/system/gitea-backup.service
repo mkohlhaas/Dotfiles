@@ -1,0 +1,13 @@
+[Unit]
+Description=Gitea SQLite and Filen Backup Service
+After=network.target
+OnFailure=gitea-backup-failed@%i.service
+
+[Service]
+Type=oneshot
+User=schmidh
+Group=gitea
+ExecStart=/usr/local/bin/gitea-filen-backup.sh
+
+[Install]
+WantedBy=multi-user.target

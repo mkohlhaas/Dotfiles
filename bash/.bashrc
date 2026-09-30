@@ -169,3 +169,5 @@ export PATH=$PATH:~/bin
 
 # create gitignore files
 function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@; }
+
+alias check-gitea-backup="echo '=== SCHEDULE ===' && systemctl list-timers --all | grep gitea-backup && echo '=== RECENT LOGS ===' && journalctl -u gitea-backup.service -n 15 --no-pager"
