@@ -23,7 +23,7 @@ else
 fi
 
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-BACKUP_FILENAME="gitea-dump-$TIMESTAMP.zip"
+BACKUP_FILENAME="gitea-dump-$TIMESTAMP-$HOSTNAME.zip"
 
 echo "=== Starting Gitea SQLite Backup ==="
 
@@ -40,11 +40,11 @@ sudo chmod 640 "$BACKUP_DIR/$BACKUP_FILENAME"
 echo "Uploading archive to Filen cloud root..."
 filen-cli upload "$BACKUP_DIR/$BACKUP_FILENAME"
 
-# 4. Step B: Move the file from root to the specific backup folder
+# Move the file from root to the specific backup folder
 echo "Moving file to destination folder..."
 filen-cli mv "/$BACKUP_FILENAME" "$FILEN_DESTINATION/$BACKUP_FILENAME"
 
-# 3. Clean up the server's local storage
+# Clean up the server's local storage
 echo "Purging local versions older than $RETENTION_DAYS days..."
 find "$BACKUP_DIR" -type f -name "gitea-dump-*.zip" -mtime +$RETENTION_DAYS -delete
 
