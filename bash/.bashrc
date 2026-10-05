@@ -171,3 +171,7 @@ export PATH=$PATH:~/bin
 function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@; }
 
 alias check-gitea-backup="echo '=== SCHEDULE ===' && systemctl list-timers --all | grep gitea-backup && echo '=== RECENT LOGS ===' && journalctl -u gitea-backup.service -n 15 --no-pager"
+
+# Enable SSH Agent
+# systemctl --user enable --now ssh-agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
