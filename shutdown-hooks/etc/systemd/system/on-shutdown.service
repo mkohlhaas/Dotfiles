@@ -1,0 +1,15 @@
+[Unit]
+Description=Run Custom Gitea Backup Script at Shutdown
+DefaultDependencies=yes
+Before=gitea.service
+Requires=gitea.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+ExecStop=/usr/local/bin/on-shutdown.sh
+RemainAfterExit=yes
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target
