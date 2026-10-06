@@ -1,15 +1,20 @@
 [Unit]
 Description=Run Custom Gitea Backup Script at Shutdown
 DefaultDependencies=yes
-Before=gitea.service
+Before=gitea.service shutdown.target reboot.target halt.target
 Requires=gitea.service
+After=network-online.target nss-lookup.target
+Wants=network-online.target
 
 [Service]
 Type=oneshot
+User=schmidh
+Group=gitea
+; EnvironmentFile=/home/schmidh/.filen.env
 ExecStart=/bin/true
-ExecStop=/usr/local/bin/on-shutdown.sh
+ExecStop=/usr/local/bin/gitea-filen-backup.sh
 RemainAfterExit=yes
-TimeoutStopSec=300
+TimeoutStopSec=450
 
 [Install]
 WantedBy=multi-user.target
