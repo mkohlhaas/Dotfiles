@@ -171,3 +171,11 @@ export PATH=$PATH:~/bin
 function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@; }
 
 alias check-gitea-backup="echo '=== SCHEDULE ===' && systemctl list-timers --all | grep gitea-backup && echo '=== RECENT LOGS ===' && journalctl -u gitea-backup.service -n 15 --no-pager"
+
+# Runpod
+source <(runpodctl completion generate bash)
+
+# Safely source RunPod API Key if the local untracked file exists
+if [ -f "$HOME/.runpod.env" ]; then
+  source "$HOME/.runpod.env"
+fi
