@@ -87,6 +87,7 @@ completions=(
   git
   composer
   ssh
+  go
 )
 
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
@@ -104,6 +105,7 @@ aliases=(
 plugins=(
   git
   bashmarks
+  golang
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -179,3 +181,6 @@ source <(runpodctl completion generate bash)
 if [ -f "$HOME/.runpod.env" ]; then
   source "$HOME/.runpod.env"
 fi
+
+# iris autocomplete (https://aur.archlinux.org/packages/iris-autocomplete)
+# eval "$(iris init bash)"
