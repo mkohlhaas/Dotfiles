@@ -166,6 +166,9 @@ set +o noclobber
 # Rust binaries
 export PATH=$PATH:~/.cargo/bin
 
+# Golang binaries
+export PATH=$PATH:~/go/bin
+
 # my binaries
 export PATH=$PATH:~/bin
 
