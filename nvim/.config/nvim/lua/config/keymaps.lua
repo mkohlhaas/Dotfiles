@@ -13,3 +13,13 @@ vim.keymap.set("n", "G", "Gzz")
 -- Move current buffer tab left or right
 vim.keymap.set("n", "<A-h>", "<cmd>BufferLineMovePrev<cr>", { desc = "Move buffer left" })
 vim.keymap.set("n", "<A-l>", "<cmd>BufferLineMoveNext<cr>", { desc = "Move buffer right" })
+
+-- Go UPWARDS (Find parent interfaces)
+vim.keymap.set("n", "<leader>cu", function()
+  vim.lsp.buf.typehierarchy("supertypes")
+end, { desc = "Supertypes" })
+
+-- Go DOWNWARDS (Find child interfaces / concrete implementations)
+vim.keymap.set("n", "<leader>cd", function()
+  vim.lsp.buf.typehierarchy("subtypes")
+end, { desc = "Subtypes" })
