@@ -23,3 +23,10 @@ vim.keymap.set("n", "<A-l>", "<cmd>BufferLineMoveNext<cr>", { desc = "Move buffe
 -- vim.keymap.set("n", "<leader>cd", function()
 --   vim.lsp.buf.typehierarchy("subtypes")
 -- end, { desc = "Subtypes" })
+
+vim.keymap.set("n", "<leader>tb", function()
+  require("neotest").run.run({
+    suite = false,
+    extra_args = { "-bench=.", "-benchmem", "-run=^$" },
+  })
+end, { desc = "Run Go Benchmark" })
